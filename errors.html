@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Документация</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: darkgray;
+        padding: 0;
+        margin: 0;
+      }
+      .wrapper {
+        margin: 0 10% 0 10%;
+        padding: 0px 20px 20px 20px;
+        background-color: rgb(255, 251, 233);
+        min-height: 95vh;
+      }
+
+      header {
+        padding-top: 20px;
+      }
+
+      footer {
+        margin: 0px 10% 0px 10%;
+        padding: 5px;
+        min-height: 5vh;
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <div class="wrapper">
+      <header>
+        <center><h2>ДОКУМЕНТАЦИЯ К ИНТЕРПРЕТАТОРУ ONYX</h2></center>
+      </header>
+
+      <div class="content">
+        <h3>Разделы:</h3>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="algorithm.html">Алгоритм работы программы</a></li>
+          <li><a href="work.html">Работа с программой</a></li>
+          <li><a href="errors.html">Ошибки</a></li>
+        </ul>
+      </div>
+      <hr>
+      <center><h3>Основные ошибки, выдаваемые интерпретатором</h3></center>
+      <p><b>Not found LPAREN/RPAREN in factor</b>
+        <p>Не был найден символ '('/')'</p>
+      </p>
+      <p><b>In unary operation not found factor</b>
+        <p>Следующий токен/лексема не существует</p>
+      </p>
+      <p><b>In unary operation not found factor</b>
+        <p>Ожидаемый токен/лексема не существует</p>
+      </p>
+      <p><b>Not found factor</b>
+        <p>Не получилось определить тип фактора</p>
+      </p>
+      <p><b>Token is not data type</b>
+        <p>Анализируемый токен не является типом данных</p>
+      </p>
+      <p><b>You already declarated variable </b>
+        <p>Переменная уже была объявлена</p>
+      </p>
+      <p><b>Variable input expected</b>
+        <p>Ожидается ввод имени переменной</p>
+      </p>
+      <p><b>Token is not var</b>
+        <p>Токен/лексема не являются именем переменных. Возможное имя переменной:
+            A | B | C | D | E | F | G | H | I | J | K | 
+                              L | M | N | O | P | Q | R | S | T | U | V | 
+                              W | X | Y | Z | a | b | c | d | e | f | g | 
+                              h | i | j | k | l | m | n | o | p | q | r | 
+                              s | t | u | v | w | x | y | z
+        </p>
+      </p>
+      <p><b>Expected symbol equal or semicolon.</b>
+        <p>Ожидался ввод символа '=' или ';'</p>
+      </p>
+      <p><b>Exprected entry symbol like '>', '&lt', '>=', '&lt=', '==' or '!='.</b>
+        <p>Ожидался ввод одного из возможных вариантов токенов/лексем: '>', '&lt', '>=', '&lt=', '==' or '!='</p>
+      </p>
+      <p><b>Token is not a point</b>
+        <p>Токен не является указателем</p>
+      </p>
+      <p><b>Operation is not defined</b>
+        <p>Ожидается последовательность токенов/лексем: goto point;</p>
+      </p>
+      <p><b>Current token is null</b>
+        <p>Текущий токен не существует!</p>
+      </p>
+      <p><b>Current token is't logical value</b>
+        <p>Текущий токен не является логическим значением. Ожидается 'true' или 'false'</p>
+      </p>
+      <p><b>Current token is't "NOT" token</b>
+        <p>Ожидается операция "NOT". Такой токен не был найден.</p>
+      </p>
+      <p><b>NOT Statenent: Not found LPAREN/RPAREN.</b>
+        <p>В операторе NOT не был найден знак '('/')'</p>
+      </p>
+      <p><b>For statement: not found LPAREN/RPAREN</b>
+        <p>В операторе FOR не был найден знак '('/')'</p>
+      </p>
+      <p><b>For statement: not found semicolon</b>
+        <p>В операторе FOR не был найден знак ';'</p>
+      </p>
+      <p><b>Compound: current token is null.</b>
+        <p>Ожидается выражение: { операции/списокОпераций }</p>
+      </p>
+      <p><b>Program: current token is null.</b>
+        <p>Не было найдено ни одного токена</p>
+      </p>
+      <p><b>Not found entry point.</b>
+        <p>Точка входа не была найдена</p>
+      </p>
+      <p><b>Program: expected symbol LBrace/RBrace.</b>
+        <p>Ожидается символ '{'/'}'</p>
+      </p>
+      <p><b>Program: not found return opeartion.</b>
+        <p>Оператор return не был найден.</p>
+      </p>
+      <p><b>Program: expected symbol semicolon.</b>
+        <p>Не был найден символ ';'</p>
+      </p>
+      <p><b>Next token is null</b>
+        <p>Следующий токен/лексема не существует</p>
+      </p>
+      <p><b>Interpreter error! Not found string</b>
+        <p>Строка не была найдена в списке объявленых строк (таблице значений)</p>
+      </p>
+      <p><b>Interpreter error! ...</b>
+        <p>Ожибка компиляции кода NASM.</p>
+      </p>
+      </div>
+    </div>
+    <footer>
+      <center>© 2022 okis-okis</center>
+    </footer>
+  </body>
+</html>
